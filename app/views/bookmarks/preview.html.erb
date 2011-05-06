@@ -1,0 +1,61 @@
+<h1>Bookmarks</h1>
+<table>
+  <% i = 0 %>
+  <tr>
+  	<% @bookmarks.each do |bookmark| %>
+      <td>
+    	<%= link_to bookmark.title, bookmark.url %> <br />
+		<% s = 0 %>
+		<% bookmark.tags.each do |t| %>
+			<span><%= t.tag %></span>
+			<% if s == 2 %>
+				<br />
+				<% s = 0 %>
+			<% end %>
+			<% s = s + 1 %>
+		<% end%>
+	  </td>
+		<% if i == 5 %>
+			</tr>
+			<tr>
+			<% i = 0 %>
+		<% end %>
+		<% i = i + 1 %>
+	<% end %>
+	</tr>
+</table>
+<div id="setup">
+	<a href="/bookmarks/">Setup</a>
+</div>
+<style>
+	body{
+		background: url("<%= @background %>") top left repeat;
+		color: <%= @color %>;
+		font-size: <%= @size %>;
+		margin: 40px 0 0 40px;
+	}
+	
+	a, a:visited{
+		color: <%= @color %>;
+		font-size: <%= @size.to_s + "px" %>;
+	}
+	
+	a:hover{
+		background-color: transparent;
+	}
+	
+	td{
+		vertical-align: top;
+		padding: 10px 30px;
+	}
+	span{
+		font-size: 10px;
+	}
+	#setup, #setup a{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		padding: 10px;
+		font-size: 12px;
+	}
+</style>

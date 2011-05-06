@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Your Company Name</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+<body bgcolor="#CCCCCC" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="780" height="70" border="0" align="center" cellpadding="0" cellspacing="0">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td width="780" height="76" align="left" valign="middle" background="images/img1.gif" class="logo" style="padding-left:25px; padding-right:25px;"><div align="right">WebsiteName.com</div></td>
+  </tr>
+</table>
+<table width="780" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <!--DWLayoutTable-->
+  <tr> 
+    <td height="70" colspan="2" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <!--DWLayoutTable-->
+        <tr>
+          <td width="780" height="70" align="left" valign="middle" background="images/img2.gif" style="padding-left:25px; padding-right:20px; padding-bottom:20px; padding-top:20px;"><span class="text1"><a href="#" class="a">Home</a> | <a href="#" class="a">Company</a> | <a href="#" class="a">Services</a> | <a href="#" class="a">Products</a> | <a href="#" class="a">Downloads</a> | <a href="#" class="a">Site Map</a> | <a href="#" class="a">Contact Us</a></span></td>
+        </tr>
+        </table></td>
+  </tr>
+  <tr>
+    <td width="276" rowspan="2" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <!--DWLayoutTable-->
+      <tr>
+        <td width="276" height="382" valign="top" style="padding-left:20px; padding-right:20px; padding-bottom:20px; padding-top:10px;"><p><span class="title">Welcome to Company Website!</span></p>          <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>          <p class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p></td>
+      </tr>
+    </table></td>
+    <td width="504" height="182" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <!--DWLayoutTable-->
+      <tr>
+        <td width="504" height="182" valign="top" style="padding-left:20px; padding-right:20px; padding-bottom:20px; padding-top:10px;"><p class="text"><span class="title">Services<br>
+                <br>
+          </span><img src="images/img3.jpg" width="72" height="96" hspace="5" border="2" align="left">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est<br>
+          <br>
+  Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+          </td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="198" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <!--DWLayoutTable-->
+      <tr>
+        <td width="504" height="200" valign="top" style="padding-left:20px; padding-right:20px; padding-bottom:20px; padding-top:10px;">
+            <p class="text"><b>Company News<br>
+              <br>
+              18.02.07 </b>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+              sed diam nonumy eirmod tempor invidunt ut labore et dolore magna 
+              aliquyam erat, sed diam voluptua.</p>
+            <p class="text"><b>16.02.07 </b> At vero eos et accusam et justo duo 
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata 
+              sanctus est Lorem ipsum dolor sit amet.</p>
+            <p class="text"><b>15.02.07</b> Duis autem vel eum iriure dolor in 
+              hendrerit in At vero eos et accusam et justo duo dolores et ea rebum.</p>
+          </td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="780" height="40" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#E01C03">
+  <tr> 
+    <td height="24" align="center" valign="middle" class="text1"> Copyright &copy; 
+      2007 Your Company Name. All rights reserved. Designed by <a href="http://www.templatesland.com" target="_blank">TemplatesLand</a>. 
+      Sponsored by <a rel="nofollow" href="http://www.templatesbank.com" target="_blank"><b>Website 
+      Templates</b></a></td>
+  </tr>
+</table>
+</body>
+</html>

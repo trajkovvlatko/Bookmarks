@@ -1,0 +1,75 @@
+a:link {  color: #333333; text-decoration: underline}
+a:visited {  color: #333333; text-decoration: underline}
+a:hover {  color: #333333; text-decoration: none}
+.logo {  font-family: Tahoma; font-size: 26px; font-weight: bold; color: #FFFFFF}
+.text, .text td, .text th, .text a {  font-family: Tahoma; font-size: 14px; color: #666666}
+.text h1{ font-size: 18px; }
+.title {  font-family: Tahoma; font-size: 18px; font-weight: bold; color: #333333}
+.text1 {
+font-family: Tahoma; font-size: 11px; color: #FFFFFF
+}
+
+a.a:link {
+	font-family: tahoma;
+	font-size: 14px;
+	font-weight: normal;
+	color: #72889D;
+}
+a.a:hover {
+	font-family: tahoma;
+	font-size: 14px;
+	font-weight: normal;
+	color: #CC0000;
+}
+a.a:visited {
+	font-family: tahoma;
+	font-size: 14px;
+	font-weight: normal;
+	color: #505C66;
+}
+
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
