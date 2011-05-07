@@ -157,7 +157,7 @@ class BookmarksController < ApplicationController
       user = User.find(session[:user_id])
       
       if user.background.include?("http")
-        
+        @background = user.background
       else
         @background = Rails.root + '/data/' + user.background 
       end
