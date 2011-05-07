@@ -156,7 +156,12 @@ class BookmarksController < ApplicationController
       @bookmarks = Bookmark.all(:conditions => "user_id = "+session[:user_id].to_s)
       user = User.find(session[:user_id])
       
-      @background = Rails.root + '/data/' + user.background
+      if user.background.include?("http")
+        
+      else
+        @background = Rails.root + '/data/' + user.background 
+      end
+      
       @size = user.size
       @color = user.color
       render :layout => false
