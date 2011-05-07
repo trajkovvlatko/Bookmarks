@@ -7,7 +7,7 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.xml
   def index
-    if session[:user_id] == 5
+    if session[:user_id] == 1
       @users = User.all
            
       respond_to do |format|
