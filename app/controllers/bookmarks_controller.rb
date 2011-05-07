@@ -79,12 +79,13 @@ class BookmarksController < ApplicationController
       user = User.find(session[:user_id])
       params[:bookmark][:user] = user
       @bookmark = Bookmark.new(params[:bookmark])
-      @tags = params[:tag]
-      @tags.each do |tag|
-        objTag = Tag.find(tag)
-        @bookmark.tags << objTag
+      if params[:tag]
+        @tags = params[:tag]
+        @tags.each do |tag|
+          objTag = Tag.find(tag)
+          @bookmark.tags << objTag
+        end
       end
-      
       if @bookmark.url.include?("http://")
       else
         @bookmark.url = "http://" + @bookmark.url
@@ -113,10 +114,11 @@ class BookmarksController < ApplicationController
         @tags = params[:tag]
         
         @bookmark.tags.delete_all
-        
-        @tags.each do |tag|
-          objTag = Tag.find(tag)
-          @bookmark.tags << objTag
+        if params[:tag]
+          @tags.each do |tag|
+            objTag = Tag.find(tag)
+            @bookmark.tags << objTag
+          end
         end
         respond_to do |format|
           if @bookmark.update_attributes(params[:bookmark])
