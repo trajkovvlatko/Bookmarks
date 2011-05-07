@@ -5,7 +5,7 @@ class TagsController < ApplicationController
   # GET /tags
   # GET /tags.xml
   def index
-    if session[:user_id] == 5
+    if session[:user_id] == 1
       @tags = Tag.all
   
       respond_to do |format|
@@ -20,7 +20,7 @@ class TagsController < ApplicationController
   # GET /tags/1
   # GET /tags/1.xml
   def show
-    if session[:user_id] == 5
+    if session[:user_id] == 1
       @tag = Tag.find(params[:id])
   
       respond_to do |format|
@@ -35,7 +35,7 @@ class TagsController < ApplicationController
   # GET /tags/new
   # GET /tags/new.xml
   def new
-    if session[:user_id] == 5
+    if session[:user_id] == 1
       @tag = Tag.new
 
       respond_to do |format|
@@ -49,7 +49,7 @@ class TagsController < ApplicationController
 
   # GET /tags/1/edit
   def edit
-    if session[:user_id] == 5
+    if session[:user_id] == 1
       @tag = Tag.find(params[:id])
     else
       redirect_to "/bookmarks"
@@ -59,7 +59,7 @@ class TagsController < ApplicationController
   # POST /tags
   # POST /tags.xml
   def create
-    if session[:user_id] == 5
+    if session[:user_id] == 1
       @tag = Tag.new(params[:tag])
 
       respond_to do |format|
@@ -79,7 +79,7 @@ class TagsController < ApplicationController
   # PUT /tags/1
   # PUT /tags/1.xml
   def update
-    if session[:user_id] == 5
+    if session[:user_id] == 1
       @tag = Tag.find(params[:id])
 
       respond_to do |format|
@@ -99,7 +99,7 @@ class TagsController < ApplicationController
   # DELETE /tags/1
   # DELETE /tags/1.xml
   def destroy
-    if session[:user_id] == 5
+    if session[:user_id] == 1
       @tag = Tag.find(params[:id])
       @tag.destroy
   
