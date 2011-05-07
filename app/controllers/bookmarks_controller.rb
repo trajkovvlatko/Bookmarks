@@ -84,6 +84,12 @@ class BookmarksController < ApplicationController
         objTag = Tag.find(tag)
         @bookmark.tags << objTag
       end
+      
+      if @bookmark.url.include?("http://")
+      else
+        @bookmark.url = "http://" + @bookmark.url
+      end
+      
       respond_to do |format|
         if @bookmark.save
           format.html { redirect_to(@bookmark, :notice => 'Bookmark was successfully created.') }
