@@ -25,11 +25,6 @@
     <%= f.label :background %><br />
     <%= f.file_field :background %>
   </div>
-  Or
-  <div class="field">
-    <%= label_tag "Url" %><br />
-    <%= text_field_tag "url" %>
-  </div>
   
   <div class="field">
     <%= f.label :color %><br />

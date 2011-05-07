@@ -8,7 +8,7 @@
   <b>Background:</b>
 </p>
 <p>
-  <img src="<%= @user.background %>" style="max-width: 150px;" />
+  <img src="<%= Rails.root + '/data/' + @user.background %>" style="max-width: 150px;" />
 </p>
 
 <p>

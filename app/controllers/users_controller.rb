@@ -24,7 +24,12 @@ class UsersController < ApplicationController
   def show
     if session[:user_id].to_s == params[:id].to_s
       @user = User.find(params[:id])
-  
+      if @user.background.include?("http")
+        
+      else
+        @user.background = Rails.root + '/data/' + @user.background 
+      end
+      
       respond_to do |format|
         format.html # show.html.erb
         format.xml  { render :xml => @user }
@@ -57,18 +62,20 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.xml
   def create
-  
     @user = User.new(params[:user])
-   
     if @user.password.to_s == ""
       flash[:notice] = "Password is empty."
       redirect_to :action => "new" 
       return
     else
       @user.password = Digest::MD5.hexdigest(@user.password)
-      
-      imgName = User.save(params[:user])
-      @user.background = imgName.to_s
+       
+      if params[:url].to_s.blank?
+        imgName = User.save(params[:user])
+        @user.background = imgName.to_s
+      else
+        @user.background = params[:url]
+      end
       
       respond_to do |format|
         if @user.save
@@ -87,9 +94,16 @@ class UsersController < ApplicationController
   def update
     if session[:user_id].to_s == params[:id].to_s
       @user = User.find(params[:id])
-      puts @user.password + " " + params[:user][:password]
+      
       if @user.password != params[:user][:password]
         params[:user][:password] = Digest::MD5.hexdigest(params[:user][:password])
+      end
+      
+      if params[:url].to_s.blank?
+        imgName = User.save(params[:user])
+        params[:user][:background] = imgName.to_s
+      else
+        params[:user][:background] = params[:url]
       end
       
       respond_to do |format|
