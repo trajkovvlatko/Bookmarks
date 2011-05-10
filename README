@@ -1,4 +1,4 @@
 This is a testing version of a simple bookmark application, written in Ruby on Rails.
 
-Users can register, login, add bookmarks, set background (link or upload), set font size and color.
-
+Users can register, login, add bookmarks, set tags for bookmarks, 
+set background (link or upload), font size and color.
